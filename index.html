@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>头像diy</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" src="./css/main.css" />
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .bg {
+            width: 100%;
+            height: 100%;
+            background-color: #ece6ca;
+        }
+
+        .file-content,
+        .file-mask,
+        .file-img {
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+        }
+
+        .file-content {
+            margin: 0 auto;
+        }
+
+        .file-mask {
+
+            text-align: center;
+            font-size: .8rem;
+            color: #d0b2b2;
+            border: 2px solid #d0b2b2;
+
+        }
+
+        .file-img {
+            opacity: 0;
+            position: absolute;
+            margin-top: -3.1rem;
+            padding: 0 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <!-- 选择模板部分 -->
+                <div>
+                    
+                </div>
+        <!-- 选择模板部分End -->
+        <!-- 上传头像部分 -->
+        <div class="file-content">
+            <div class="file-mask">
+                +
+            </div>
+            <input type="file" id="fileImg" class="file-img" onchange="uploadImg(this)" />
+        </div>
+        <!-- 上传头像部分End -->
+    </div>
+    <!-- <canvas id="fuse"></canvas>
+    <script>
+        var fuse = document.getElementById("fuse");
+        var ctx = canvas.getContext('2d');
+        var canvasWidth = Math.floor(document.documentElement.clientWidth) * 2;//屏幕宽度
+        var canvasHeight = Math.floor(document.documentElement.clientHeight) * 2;//屏幕高度
+    </script>
+    <script type="text/javascript" src="js/main.js"> </script> -->
+</body>
+
+</html>
